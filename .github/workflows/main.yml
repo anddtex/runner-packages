@@ -1,0 +1,11 @@
+name: Install
+
+on: 
+  workflow_dispatch:
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Executar FFMPEG
+        run: 
+          ffmpeg --help
